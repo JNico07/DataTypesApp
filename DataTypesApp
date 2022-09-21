@@ -1,0 +1,24 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class DataTypesApp
+{
+    public static void Main(string[] args)
+    {
+        Console.Write ("Enter the pieces of apple: ");
+        int apple = Convert.ToInt32(Console.ReadLine());
+        Console.Write ("Enter the total price of " +apple+ " apple(s): ");
+        double applePrice = Convert.ToDouble(Console.ReadLine());
+
+        int covertedValue = Convert.ToInt32(Math.Floor(applePrice));
+
+        Console.WriteLine("\nThe total price of " +apple+ " apple(s) is: " +applePrice+
+                          "\nThe value of original price is: " +applePrice+
+                          "\nThe value of converted price is: " +covertedValue);
+                          
+        Console.Write("\nPress any key to exit...");
+        Console.ReadKey();
+    }
+}
